@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#26000000" />
+
+    <TextView
+        android:id="@+id/textViewDNS1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/editTextDNS1"
+        android:textSize="12pt"
+        android:text="DNS 1" />
+
+    <EditText
+        android:id="@+id/editTextDNS1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/textViewDNS2"
+        android:textSize="12pt" />
+
+    <TextView
+        android:id="@+id/textViewDNS2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/editTextDNS2"
+        android:textSize="12pt"
+        android:text="DNS 2" />
+
+    <EditText
+        android:id="@+id/editTextDNS2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textSize="12pt"
+        android:layout_above="@+id/button3" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="202dp"
+        android:layout_height="73dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/start_button"
+        android:onClick="connect"
+        android:text="Start"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="202dp"
+        android:layout_height="73dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/stop_button"
+        android:onClick="disconnect"
+        android:text="Stop"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>
